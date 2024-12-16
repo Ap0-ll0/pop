@@ -1,0 +1,472 @@
+{
+	"info": {
+		"_postman_id": "02316887-141e-4d90-8a1c-609748ca1b39",
+		"name": "kurs_poisk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31748474"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "ula",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "89012345678",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "stol@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "женский",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "19",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Metallolom666*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/auth",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Уга буга угавна",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "19",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "женский",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "stolr@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "89123454586",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "ulaga",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Metallolom666*",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/register",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kabinet",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "LB4yDwn6f0hAGYnLm8RngckGLZem2Lv1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/kabinet",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"kabinet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "LB4yDwn6f0hAGYnLm8RngckGLZem2Lv1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "redflag@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/user/email",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"user",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new phone",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "LB4yDwn6f0hAGYnLm8RngckGLZem2Lv1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "0000000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/user/phone",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"user",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add resum",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "EQ71DIUfJ3fyI0BjA-FOpHZztdHNVYma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "бэмс",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "postman-cloud:///1efb60ef-ecbc-4820-b263-30616badb83f"
+						},
+						{
+							"key": "experience",
+							"value": "нету",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "let@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "3423",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "вот так вот",
+							"type": "text"
+						},
+						{
+							"key": "drug_spec_disrcip",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "specialization",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "8",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "status",
+							"value": "В поиске",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/add/resum",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"add",
+						"resum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit resum",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nopcWbgVFQ35QdQVGrJQPNHuccXWce_M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phone",
+							"value": "3333333333",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/resum/edit?id=6",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"resum",
+						"edit"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delet resum",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "8ues1KT3oFb6nW_BC8Uqb2cQ-Ye6Rq18",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/resum/10",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"resum",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "poisk on specialization",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/poisk?specialization=2",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"poisk"
+					],
+					"query": [
+						{
+							"key": "specialization",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "poisk alone resume",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://k-gradoboeva.сделай.site/one?id=9",
+					"protocol": "https",
+					"host": [
+						"k-gradoboeva",
+						"сделай",
+						"site"
+					],
+					"path": [
+						"one"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
